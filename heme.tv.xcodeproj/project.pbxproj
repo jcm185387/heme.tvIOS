@@ -195,6 +195,7 @@
 				C4F7F5B6254685FE006E9B36 /* Frameworks */,
 				C4F7F5B7254685FE006E9B36 /* Resources */,
 				C3A772703278BDBB9FE78566 /* [CP] Embed Pods Frameworks */,
+				A6EDC0F15F24FCF3E3D0F43A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -214,6 +215,7 @@
 				C4F7F5CC25468604006E9B36 /* Frameworks */,
 				C4F7F5CD25468604006E9B36 /* Resources */,
 				5A4D523DD8920D677BFE62CD /* [CP] Embed Pods Frameworks */,
+				7C3AEFCA54182669E1419ACD /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -234,6 +236,7 @@
 				C4F7F5D725468604006E9B36 /* Frameworks */,
 				C4F7F5D825468604006E9B36 /* Resources */,
 				9710036B1BE0CA93D5C413A5 /* [CP] Embed Pods Frameworks */,
+				EE033DBC31A0B1A127586595 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -360,6 +363,23 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-heme.tvTests/Pods-heme.tvTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		7C3AEFCA54182669E1419ACD /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-heme.tvTests/Pods-heme.tvTests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-heme.tvTests/Pods-heme.tvTests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-heme.tvTests/Pods-heme.tvTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		8465EE9FFDE3C86263CD324A /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -421,6 +441,23 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-heme.tv-heme.tvUITests/Pods-heme.tv-heme.tvUITests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		A6EDC0F15F24FCF3E3D0F43A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-heme.tv/Pods-heme.tv-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-heme.tv/Pods-heme.tv-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-heme.tv/Pods-heme.tv-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		C3A772703278BDBB9FE78566 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -436,6 +473,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-heme.tv/Pods-heme.tv-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EE033DBC31A0B1A127586595 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-heme.tv-heme.tvUITests/Pods-heme.tv-heme.tvUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-heme.tv-heme.tvUITests/Pods-heme.tv-heme.tvUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-heme.tv-heme.tvUITests/Pods-heme.tv-heme.tvUITests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */

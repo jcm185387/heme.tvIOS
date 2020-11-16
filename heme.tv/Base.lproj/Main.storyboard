@@ -35,7 +35,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="asO-tx-8R7">
-                                <rect key="frame" x="16" y="60" width="382" height="136"/>
+                                <rect key="frame" x="16" y="60" width="382" height="184"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Correo Electrónico" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tgk-fT-nVA">
                                         <rect key="frame" x="0.0" y="0.0" width="382" height="40"/>
@@ -77,6 +77,18 @@
                                             <constraint firstAttribute="height" constant="40" id="587-2O-IcP"/>
                                         </constraints>
                                     </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yHb-hg-nwO">
+                                        <rect key="frame" x="0.0" y="144" width="382" height="40"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Google" image="google">
+                                            <color key="titleColor" systemColor="systemGroupedBackgroundColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="googleButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="b46-af-kAY"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                             </stackView>
                         </subviews>
@@ -93,7 +105,10 @@
                     </view>
                     <navigationItem key="navigationItem" id="EJt-zc-K0k"/>
                     <connections>
+                        <outlet property="authStackView" destination="asO-tx-8R7" id="0Up-mI-Dlc"/>
                         <outlet property="emailTextField" destination="tgk-fT-nVA" id="oPw-7a-0Vm"/>
+                        <outlet property="googleButton" destination="yHb-hg-nwO" id="9PH-N6-w10"/>
+                        <outlet property="googleButtonAction" destination="asO-tx-8R7" id="7eo-pA-Kz2"/>
                         <outlet property="logInButton" destination="WEK-VI-b9P" id="RBx-0L-VNb"/>
                         <outlet property="passwordTextField" destination="sfk-Pc-p2u" id="ycd-m3-KLb"/>
                         <outlet property="signUpButton" destination="xj4-jU-mrJ" id="yol-hY-tn1"/>
@@ -101,10 +116,11 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1016" y="-86"/>
+            <point key="canvasLocation" x="1015.9420289855074" y="-86.413043478260875"/>
         </scene>
     </scenes>
     <resources>
+        <image name="google" width="20" height="20"/>
         <namedColor name="AccentColor">
             <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
@@ -115,6 +131,9 @@
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGroupedBackgroundColor">
             <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>

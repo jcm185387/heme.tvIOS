@@ -7,16 +7,19 @@ target 'heme.tv' do
 
   pod 'Firebase/Analytics'
   pod 'Firebase/Auth'
+  pod 'GoogleSignIn'
 
   target 'heme.tvTests' do
     inherit! :search_paths
     pod 'Firebase/Analytics'
     pod 'Firebase/Auth'
+    pod 'GoogleSignIn'
   end
 
   target 'heme.tvUITests' do
     pod 'Firebase/Analytics'
     pod 'Firebase/Auth'
+    pod 'GoogleSignIn'
   end
 
 end
