@@ -35,25 +35,25 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="asO-tx-8R7">
-                                <rect key="frame" x="18" y="276" width="382" height="184"/>
+                                <rect key="frame" x="18" y="276" width="382" height="202"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Correo Electrónico" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tgk-fT-nVA">
-                                        <rect key="frame" x="0.0" y="0.0" width="382" height="40"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="382" height="34"/>
                                         <color key="backgroundColor" name="background"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Contraseña" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sfk-Pc-p2u">
-                                        <rect key="frame" x="0.0" y="48" width="382" height="40"/>
+                                        <rect key="frame" x="0.0" y="42" width="382" height="34"/>
                                         <color key="backgroundColor" name="background"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     </textField>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="HXp-XR-ugZ">
-                                        <rect key="frame" x="0.0" y="96" width="382" height="40"/>
+                                        <rect key="frame" x="0.0" y="84" width="382" height="34"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xj4-jU-mrJ">
-                                                <rect key="frame" x="0.0" y="0.0" width="187" height="40"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="187" height="34"/>
                                                 <color key="backgroundColor" name="AccentColor"/>
                                                 <state key="normal" title="Registrar">
                                                     <color key="titleColor" systemColor="labelColor"/>
@@ -63,7 +63,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WEK-VI-b9P">
-                                                <rect key="frame" x="195" y="0.0" width="187" height="40"/>
+                                                <rect key="frame" x="195" y="0.0" width="187" height="34"/>
                                                 <color key="backgroundColor" systemColor="systemGray6Color"/>
                                                 <state key="normal" title="Acceder">
                                                     <color key="titleColor" systemColor="labelColor"/>
@@ -78,7 +78,7 @@
                                         </constraints>
                                     </stackView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yHb-hg-nwO">
-                                        <rect key="frame" x="0.0" y="144" width="382" height="40"/>
+                                        <rect key="frame" x="0.0" y="126" width="382" height="34"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -87,6 +87,19 @@
                                         </state>
                                         <connections>
                                             <action selector="googleButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="b46-af-kAY"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="eYv-Bn-jDn">
+                                        <rect key="frame" x="0.0" y="168" width="382" height="34"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Facebook" image="facebook">
+                                            <color key="titleColor" systemColor="systemGroupedBackgroundColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="fabookButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gkx-IN-4QW"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -120,6 +133,7 @@
                     <connections>
                         <outlet property="authStackView" destination="asO-tx-8R7" id="0Up-mI-Dlc"/>
                         <outlet property="emailTextField" destination="tgk-fT-nVA" id="oPw-7a-0Vm"/>
+                        <outlet property="facebookButton" destination="eYv-Bn-jDn" id="orO-Tj-9xG"/>
                         <outlet property="googleButton" destination="yHb-hg-nwO" id="9PH-N6-w10"/>
                         <outlet property="googleButtonAction" destination="asO-tx-8R7" id="7eo-pA-Kz2"/>
                         <outlet property="logInButton" destination="WEK-VI-b9P" id="RBx-0L-VNb"/>
@@ -133,6 +147,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="facebook" width="20" height="20"/>
         <image name="google" width="20" height="20"/>
         <image name="inicio_hemtv" width="303" height="189"/>
         <namedColor name="AccentColor">

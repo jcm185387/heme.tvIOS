@@ -10,6 +10,7 @@ import WebKit
 import FirebaseAnalytics
 import FirebaseAuth
 import GoogleSignIn
+import FacebookLogin
 
 class AuthViewController: UIViewController {
     
@@ -19,6 +20,9 @@ class AuthViewController: UIViewController {
     @IBOutlet weak var signUpButton: UIButton!
     @IBOutlet weak var logInButton: UIButton!
     @IBOutlet weak var googleButton: UIButton!
+    
+    @IBOutlet weak var facebookButton: UIButton!
+    
     
     private var webView: WKWebView!
     
@@ -97,6 +101,27 @@ class AuthViewController: UIViewController {
         GIDSignIn.sharedInstance()?.signIn()
     }
     
+    @IBAction func fabookButtonAction(_ sender: Any) {
+        let loginManager = LoginManager()
+        loginManager.logOut()
+        loginManager.logIn(permissions: [.email], viewController: self){ (result) in
+            switch result{
+                
+            case .success(granted: let granted, declined: let declined, token: let token):
+                
+                let credential = FacebookAuthProvider.credential(withAccessToken: token.tokenString)
+                Auth.auth().signIn(with: credential){ (result, error) in
+                    self.showHome(result: result, error: error, provider: .facebook)
+                    
+                }
+            case .cancelled:
+                break
+            case .failed:
+                break
+            }
+        }
+        
+    }
     private func showHome(result: AuthDataResult?, error: Error?, provider: ProviderType) {
         
         if let result = result, error == nil{

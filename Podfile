@@ -8,18 +8,21 @@ target 'heme.tv' do
   pod 'Firebase/Analytics'
   pod 'Firebase/Auth'
   pod 'GoogleSignIn'
+  pod 'FacebookLogin'
 
   target 'heme.tvTests' do
     inherit! :search_paths
     pod 'Firebase/Analytics'
     pod 'Firebase/Auth'
     pod 'GoogleSignIn'
+    pod 'FacebookLogin'
   end
 
   target 'heme.tvUITests' do
     pod 'Firebase/Analytics'
     pod 'Firebase/Auth'
     pod 'GoogleSignIn'
+    pod 'FacebookLogin'
   end
 
 end
