@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17700" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="dyv-h3-fKU">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="dyv-h3-fKU">
     <device id="retina5_5" orientation="portrait" appearance="dark"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -135,7 +135,6 @@
                         <outlet property="emailTextField" destination="tgk-fT-nVA" id="oPw-7a-0Vm"/>
                         <outlet property="facebookButton" destination="eYv-Bn-jDn" id="orO-Tj-9xG"/>
                         <outlet property="googleButton" destination="yHb-hg-nwO" id="9PH-N6-w10"/>
-                        <outlet property="googleButtonAction" destination="asO-tx-8R7" id="7eo-pA-Kz2"/>
                         <outlet property="logInButton" destination="WEK-VI-b9P" id="RBx-0L-VNb"/>
                         <outlet property="passwordTextField" destination="sfk-Pc-p2u" id="ycd-m3-KLb"/>
                         <outlet property="signUpButton" destination="xj4-jU-mrJ" id="yol-hY-tn1"/>
